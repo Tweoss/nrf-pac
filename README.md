@@ -1,3 +1,5 @@
+forked to remove unused dependency on cortex-m-rt
+
 # nrf-pac
 
 This is a [Peripheral Access Crate](https://rust-embedded.github.io/book/start/registers.html) for Nordic Semiconductor nRF microcontrollers.

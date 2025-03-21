@@ -188,7 +188,7 @@ pub const PPI: ppi::Ppi = unsafe { ppi::Ppi::from_ptr(0x4001_f000usize as _) };
 #[doc = "General purpose input and output."]
 pub const GPIO: gpio::Gpio = unsafe { gpio::Gpio::from_ptr(0x5000_0000usize as _) };
 #[doc = r" Number available in the NVIC for configuring priority"]
-#[cfg(feature = "rt")]
+// #[cfg(feature = "rt")]
 pub const NVIC_PRIO_BITS: u8 = 2;
 #[cfg(feature = "rt")]
 pub use cortex_m_rt::interrupt;

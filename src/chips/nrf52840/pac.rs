@@ -391,7 +391,7 @@ pub const CC_RNG: cc_rng::CcRng = unsafe { cc_rng::CcRng::from_ptr(0x5002_b000us
 pub const CC_RNG_SRAM: cc_rng_sram::CcRngSram =
     unsafe { cc_rng_sram::CcRngSram::from_ptr(0x5002_b000usize as _) };
 #[doc = r" Number available in the NVIC for configuring priority"]
-#[cfg(feature = "rt")]
+// #[cfg(feature = "rt")]
 pub const NVIC_PRIO_BITS: u8 = 3;
 #[cfg(feature = "rt")]
 pub use cortex_m_rt::interrupt;

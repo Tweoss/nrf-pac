@@ -260,7 +260,7 @@ pub const USBD: usbd::Usbd = unsafe { usbd::Usbd::from_ptr(0x4002_7000usize as _
 #[doc = "GPIO Port 1"]
 pub const P0: gpio::Gpio = unsafe { gpio::Gpio::from_ptr(0x5000_0000usize as _) };
 #[doc = r" Number available in the NVIC for configuring priority"]
-#[cfg(feature = "rt")]
+// #[cfg(feature = "rt")]
 pub const NVIC_PRIO_BITS: u8 = 3;
 #[cfg(feature = "rt")]
 pub use cortex_m_rt::interrupt;

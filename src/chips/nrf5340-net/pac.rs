@@ -199,7 +199,7 @@ pub const APPMUTEX_S: mutex::Mutex = unsafe { mutex::Mutex::from_ptr(0x5003_0000
 #[doc = "Cross-Trigger Interface control. NOTE: this is not a separate peripheral, but describes CM33 functionality."]
 pub const CTI_NS: cti::Cti = unsafe { cti::Cti::from_ptr(0xe004_2000usize as _) };
 #[doc = r" Number available in the NVIC for configuring priority"]
-#[cfg(feature = "rt")]
+// #[cfg(feature = "rt")]
 pub const NVIC_PRIO_BITS: u8 = 3;
 #[cfg(feature = "rt")]
 pub use cortex_m_rt::interrupt;
